@@ -1,0 +1,22 @@
+{
+  "name": "angular2_example",
+  "version": "1.0.0",
+  "description": "An Angular2 example application.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRealVira/Angular2_Example.git"
+  },
+  "keywords": [
+    "Angualar2"
+  ],
+  "author": "Vira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheRealVira/Angular2_Example/issues"
+  },
+  "homepage": "https://github.com/TheRealVira/Angular2_Example#readme"
+}
