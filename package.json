@@ -2,13 +2,34 @@
   "name": "angular2_example",
   "version": "1.0.0",
   "description": "An Angular2 example application.",
-  "main": "index.html",
+  "main": "./src/index.html",
   "scripts": {
+    "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TheRealVira/Angular2_Example.git"
+  },
+  "dependencies": {
+    "@angular/common": "~2.3.0",
+    "@angular/compiler": "~2.3.0",
+    "@angular/core": "~2.3.0",
+    "@angular/forms": "~2.3.0",
+    "@angular/http": "~2.3.0",
+    "@angular/platform-browser": "~2.3.0",
+    "@angular/platform-browser-dynamic": "~2.3.0",
+    "@angular/router": "~3.3.0",
+    "angular-in-memory-web-api": "~0.2.1",
+    "systemjs": "0.19.40",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-rc.4",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "typescript": "~2.0.10"
   },
   "keywords": [
     "Angualar2"
