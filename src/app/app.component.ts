@@ -1,7 +1,16 @@
 import { Component } from '@angular/core';
 
+import '../js/test.js';
+import '../js/materialize.js';
+
 @Component({
-  selector: 'my-app',
-  template: `<h1>Nice to meet you {{name}}!</h1>`
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: [
+	  '../css/materialize.min.css'
+  ]
 })
-export class AppComponent { name = 'Angular2'; }
+
+export class AppComponent {
+  title = 'app works!';
+}

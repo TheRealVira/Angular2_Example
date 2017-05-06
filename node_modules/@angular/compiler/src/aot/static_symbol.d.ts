@@ -14,5 +14,14 @@ export declare class StaticSymbol {
     filePath: string;
     name: string;
     members: string[];
-    constructor(filePath: string, name: string, members?: string[]);
+    constructor(filePath: string, name: string, members: string[]);
+    assertNoMembers(): void;
+}
+/**
+ * A cache of static symbol used by the StaticReflector to return the same symbol for the
+ * same symbol values.
+ */
+export declare class StaticSymbolCache {
+    private cache;
+    get(declarationFile: string, name: string, members?: string[]): StaticSymbol;
 }
