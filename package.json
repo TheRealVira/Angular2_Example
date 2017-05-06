@@ -22,7 +22,9 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "angular2-materialize": "^15.0.1",
     "core-js": "^2.4.1",
+    "materialize-css": "^0.98.2",
     "rxjs": "^5.1.0",
     "zone.js": "^0.8.4"
   },
@@ -55,7 +57,6 @@
     "Angualar2"
   ],
   "author": "Vira",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/TheRealVira/Angular2_Example/issues"
   },
