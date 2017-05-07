@@ -1,12 +1,20 @@
-<div class="row center">
-	<button (click)='generate()' class="btn-large waves-effect waves-light orange">Reload</button>
-</div>
+<div>
+	<div class="row center">
+		<button id="genBtn" (click)='generate()' class="btn-large waves-effect waves-light orange">Reload</button>
 
-<div class="row center">
-	<input [(ngModel)]="length" placeholder="Length" type="number">
-	<input [(ngModel)]="text" placeholder="Ranom" type="text">
-</div>
+		<input [(ngModel)]="length" placeholder="Length" type="number">
+		<input [(ngModel)]="text" placeholder="Random" type="text" id="myText">
+	</div>
 
-<textarea [(ngModel)]="text">
-	{{text}}
-</textarea>
+	<textarea [(ngModel)]="text">
+		{{text}}
+	</textarea>
+
+	<h3 placeholder="Text">
+		{{rText}}
+	</h3>
+	
+	<div style="background-color:powderblue;">
+		Pressed key:  {{key}}
+	</div>
+</div>

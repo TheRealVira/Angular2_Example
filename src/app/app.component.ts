@@ -1,4 +1,4 @@
-import { Input,Component,OnChanges } from '@angular/core';
+import { Component,OnChanges,HostListener } from '@angular/core';
 
 import '../js/test.js';
 
@@ -10,8 +10,10 @@ const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
 })
 
 
-export class AppComponent implements OnChanges {
+export class AppComponent {
 	text = '';
+	rText = '';
+	key;
 
 	oldLength = 10;
 	length = 10;
@@ -19,10 +21,12 @@ export class AppComponent implements OnChanges {
 	constructor(){
 		this.generate();
 	}
-	
-	ngOnChanges(changeRecord) {
-		if(length==42){
-			alert(':)');
+
+	@HostListener('document:keypress', ['$event'])
+	handleKeyboardEvent(event: KeyboardEvent) { 
+		this.key = event.key;
+		if ((event.keyCode ? event.keyCode : event.which) == 13) { //Enter keycode
+			this.generate();
 		}
 	}
 
@@ -34,6 +38,8 @@ export class AppComponent implements OnChanges {
 				console.log(':)');
 			}
 		}
+		
+		this.rText = this.text.split("").reverse().join("").substring(0,this.length)+(this.text.length>this.length?"...":"");
 	}
 
 	generate(){
